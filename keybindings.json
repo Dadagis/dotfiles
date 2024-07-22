@@ -9,5 +9,165 @@
     "key": "cmd+shift+v",
     "command": "pasteAndIndent.action",
     "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "tab",
+    "command": "editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly && !suggestWidgetVisible && !inSnippetMode"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+[Minus]",
+    "command": "-editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+[IntlBackslash]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'ruby' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+3",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'ruby' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+[IntlBackslash]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'coffeescript' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+3",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'coffeescript' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+[IntlBackslash]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'erb' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+3",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'erb' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+[IntlBackslash]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'haml' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+3",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'haml' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+[IntlBackslash]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'slim' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+3",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'slim' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "[BracketRight]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'javascript' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+4",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'javascript' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "[BracketRight]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'javascriptreact' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+4",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'javascriptreact' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "[BracketRight]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'vue' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+4",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'vue' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "[BracketRight]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'typescript' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+4",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'typescript' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "[BracketRight]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'typescriptreact' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+4",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'typescriptreact' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+[IntlBackslash]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'elixir' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+3",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'elixir' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+[BracketRight]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'groovy' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+4",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'groovy' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+[IntlBackslash]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'crystal' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+3",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'crystal' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+[IntlBackslash]",
+    "command": "auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'ecr' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "shift+3",
+    "command": "-auto.addInterpolation",
+    "when": "editorTextFocus && editorLangId == 'ecr' && vim.mode != 'Normal' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine'"
+  },
+  {
+    "key": "alt+tab",
+    "command": "outdent",
+    "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "shift+tab",
+    "command": "-outdent",
+    "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus"
   }
 ]
